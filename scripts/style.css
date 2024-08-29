@@ -1,0 +1,207 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.butao-amarelo {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #ffcb45;
+  transition: 0.2s;
+  margin-right: 20px;
+  border-color: transparent;
+}
+
+.butao-amarelo:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 1px rgba(146, 114, 9, 0.377);
+}
+
+body {
+  background-color: #fff9ea;
+}
+
+/* ESTILO HEADER */
+header {
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  position: fixed;
+  background-color: #fff9ea
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+nav img {
+  width: 40px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+  margin: auto;
+}
+
+nav a {
+  color: rgba(0, 0, 0, 0.671);
+  text-decoration: none;
+  height: 300px;
+}
+
+nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ESTILO MAIN SOBRE */
+
+.frente {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.671);
+  padding-top: 150px;
+}
+
+.frente .texto {
+  padding-top: 100px;
+  padding-left: 8%;
+}
+.frente .texto h1 {
+  font-size: 52px;
+}
+
+.frente .texto h1 span {
+  color: #e9a209;
+}
+
+.frente .texto p {
+  padding: 40px 0 30px 0;
+}
+
+.frente .texto .telefone {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.26);
+  transition: 0.2s;
+}
+
+.frente .texto .telefone:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 1px rgba(146, 114, 9, 0.377);
+}
+
+.frente .texto .telefone i {
+  background-color: #ffcb45;
+  padding: 5px 8px;
+  margin-right: 7px;
+  border-radius: 30%;
+}
+
+.frente .btn-social {
+  margin: 20px 10px 20px 0;
+  padding: 8px;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
+}
+
+.frente img {
+  width: 600px;
+}
+
+.frente .imagem {
+  width: 700px;
+  background-color: #ffe8b4;
+  padding: 50px 90px 50px 40px;
+  border-radius: 30% 30% 0 30%;
+}
+
+/* ESTILO CARDAPIO */
+
+.cardápio {
+  margin-bottom: 100px;
+}
+.cardápio .titulo {
+  text-align: center;
+  padding: 250px 0 50px 0;
+}
+.cardápio .titulo h3 {
+  color: #e9a209;
+}
+
+.cardápio .pratos-especiais {
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+}
+
+.cardápio .produto{
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.cardápio .produto p{
+  padding-bottom: 20px;
+}
+
+.cardápio img {
+  width: 200px;
+  padding-bottom: 20px;
+}
+
+.pratos-especiais h2 {
+  padding-bottom: 20px;
+}
+
+.pratos-especiais i{
+  color: #ffcb45;
+}
+
+.produto .preço{
+  padding: 20px;
+}
+
+.produto .preço i{
+  background-color: #ffcb45;
+  color: black;
+  padding: 6px 10px;
+  border-radius: 7px;
+  font-size: 11px;
+}
+
+.sobre-mim{
+  display: flex;
+
+  & .img-chef img{
+  width: 400px;
+  height: 100%;
+  border-radius: 30%;
+  }
+
+  & .texto{
+    display: inline-block;
+    background-color: white;
+  }
+
+  & .texto img{
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+}
