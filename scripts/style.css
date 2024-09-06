@@ -4,7 +4,7 @@
   font-weight: 100;
   font-style: normal;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -12,6 +12,10 @@ html{
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff9ea;
 }
 
 .butao-amarelo {
@@ -29,8 +33,19 @@ html{
   box-shadow: 0px 0px 5px 1px rgba(146, 114, 9, 0.377);
 }
 
-body {
-  background-color: #fff9ea;
+.btn-social {
+  margin: 20px 10px 20px 0;
+  padding: 7px;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: white;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
+}
+
+.btn-social:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 5px 1px rgba(146, 114, 9, 0.377);
+  transition: 0.5s;
 }
 
 /* ESTILO HEADER */
@@ -39,7 +54,7 @@ header {
   padding: 20px 8% 5px 8%;
   display: flex;
   position: fixed;
-  background-color: #fff9ea
+  background-color: #fff9ea;
 }
 nav {
   width: 100%;
@@ -121,15 +136,6 @@ nav a:hover {
   border-radius: 30%;
 }
 
-#frente .btn-social {
-  margin: 20px 10px 20px 0;
-  padding: 8px;
-  border-radius: 8px;
-  border-color: transparent;
-  background-color: white;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
-}
-
 #frente img {
   width: 600px;
 }
@@ -142,7 +148,6 @@ nav a:hover {
 }
 
 /* ESTILO CARDAPIO */
-
 #cardápio {
   margin-top: 100px;
   margin-bottom: 300px;
@@ -168,7 +173,7 @@ nav a:hover {
   max-width: 90%;
 }
 
-#cardápio .produto{
+#cardápio .produto {
   background-color: white;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
   padding: 20px;
@@ -177,7 +182,7 @@ nav a:hover {
   margin: 5%;
 }
 
-#cardápio .produto p{
+#cardápio .produto p {
   padding-bottom: 20px;
 }
 
@@ -190,15 +195,15 @@ nav a:hover {
   padding-bottom: 20px;
 }
 
-.pratos-especiais i{
+.pratos-especiais i {
   color: #ffcb45;
 }
 
-.produto .preço{
+.produto .preço {
   padding: 20px;
 }
 
-.produto .preço i{
+.produto .preço i {
   background-color: #ffcb45;
   color: black;
   padding: 6px 10px;
@@ -267,4 +272,26 @@ nav a:hover {
 
 #sobre-mim .cima i{
   color: #ffcb45;
+}
+
+/* ESTILO FOOTER */
+
+footer{
+  display: flex;
+  background-color: #ffe8b4;
+  justify-content: space-between;
+  padding: 0px 8% ;
+  align-items: center;
+}
+
+footer .logo-nome{
+  display: flex;
+}
+
+footer .logo-nome img{
+  margin-right: 20px;
+}
+
+footer .logo-nome{
+  align-items: center;
 }
