@@ -1,12 +1,17 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* FONTES */
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
 }
+
+/* RESET */
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +19,12 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+/* ESTILO GERAL */
 body {
   background-color: #fff9ea;
 }
 
+/* BOTÕES */
 .butao-amarelo {
   padding: 10px 15px;
   border-radius: 10px;
@@ -35,7 +42,7 @@ body {
 
 .btn-social {
   margin: 20px 10px 20px 0;
-  padding: 7px;
+  padding: 8px;
   border-radius: 8px;
   border-color: transparent;
   background-color: white;
@@ -48,7 +55,19 @@ body {
   transition: 0.5s;
 }
 
-/* ESTILO HEADER */
+.btn-social:hover .bi-whatsapp {
+  color: #25D366;
+}
+
+.btn-social:hover .bi-instagram {
+  color: #E4405F;
+}
+
+.btn-social:hover .bi-facebook {
+  color: #1877F2;
+}
+
+/* HEADER */
 header {
   width: 100%;
   padding: 20px 8% 5px 8%;
@@ -56,6 +75,7 @@ header {
   position: fixed;
   background-color: #fff9ea;
 }
+
 nav {
   width: 100%;
   display: flex;
@@ -67,6 +87,7 @@ nav {
 nav img {
   width: 40px;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -83,15 +104,15 @@ nav a {
 }
 
 nav a:hover {
-  color: black;
-  text-decoration: underline;
-  background-color: #d1a63811;
   padding: 10px;
   border-radius: 10px;
+  color: #926709;
+  background-color: #ffecb3;
+  outline: 2px solid #ffcb45;
+  outline-offset: 3px;
 }
 
-/* ESTILO FRENTE */
-
+/* SEÇÃO FRENTE */
 #frente {
   display: flex;
   justify-content: space-between;
@@ -103,6 +124,7 @@ nav a:hover {
   padding-top: 100px;
   padding-left: 8%;
 }
+
 #frente .texto h1 {
   font-size: 52px;
 }
@@ -147,33 +169,34 @@ nav a:hover {
   border-radius: 30% 30% 0 30%;
 }
 
-/* ESTILO CARDAPIO */
-#cardápio {
-  margin-top: 100px;
-  margin-bottom: 300px;
+/* SEÇÃO PROMOÇÕES */
+#promoções {
+  margin: 100px 0 300px 0;
 }
 
-#cardápio .titulo {
+#promoções .titulo {
   text-align: center;
   padding: 250px 0 40px 0;
 }
 
-#cardápio .titulo h3 {
+#promoções .titulo h3 {
   color: #e9a209;
 }
 
-#cardápio .titulo h2 {
+#promoções .titulo h2 {
   color: rgba(0, 0, 0, 0.671);
+  margin: 0 auto;
 }
 
-#cardápio .pratos-especiais {
+#promoções .pratos-especiais {
   display: grid;
   margin: auto;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 90%;
 }
 
-#cardápio .produto {
+
+#promoções .produto {
   background-color: white;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
   padding: 20px;
@@ -182,11 +205,11 @@ nav a:hover {
   margin: 5%;
 }
 
-#cardápio .produto p {
+#promoções .produto p {
   padding-bottom: 20px;
 }
 
-#cardápio img {
+#promoções img {
   width: 200px;
   padding-bottom: 20px;
 }
@@ -211,87 +234,172 @@ nav a:hover {
   font-size: 11px;
 }
 
-/* ESTILO SOBRE-MIM */
-#sobre-mim{
+/* SEÇÃO SOBRE MIM */
+#sobre-mim {
   display: flex;
   margin-bottom: 200px;
   justify-content: space-between;
+  gap: 20px;
+  
 }
 
-#sobre-mim img{
+#sobre-mim img {
   background-color: #ffe8b4;
   border-radius: 30% 30% 30% 0;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.089);
 }
 
-#sobre-mim .texto{
+#sobre-mim .texto {
   margin-right: 8%;
 }
 
-#sobre-mim .titulo{
+#sobre-mim .titulo {
   padding: 60px 0 40px 0;
 }
 
-#sobre-mim .titulo h3{
+#sobre-mim .titulo h3 {
   color: #fab623;
   padding-bottom: 10px;
 }
 
-#sobre-mim .titulo h2{
+#sobre-mim .titulo h2 {
   font-size: 34px;
   max-width: 550px;
+  color: rgba(0, 0, 0, 0.671);
 }
 
-#sobre-mim .avaliação{
+#sobre-mim .avaliação {
   background-color: white;
   max-width: 700px;
   box-shadow: 0px 1px 10px 2px rgba(70, 70, 70, 0.205);
   border-radius: 8px;
-}
-
-#sobre-mim .avaliação{
   padding: 10px;
   margin-bottom: 20px;
 }
 
-#sobre-mim .avaliação #nome-cliente{
+#sobre-mim .avaliação #nome-cliente {
   padding-bottom: 10px;
   transition: 0.2s;
 }
 
-#sobre-mim .avaliação #nome-cliente:hover{
+#sobre-mim .avaliação #nome-cliente:hover {
   text-decoration: underline;
   transform: scale(1.05);
   cursor: pointer;
 }
 
-#sobre-mim .cima{
+#sobre-mim .cima {
   display: flex;
   justify-content: space-between;
 }
 
-#sobre-mim .cima i{
+#sobre-mim .cima i {
   color: #ffcb45;
 }
 
-/* ESTILO FOOTER */
+/* SEÇÃO SOBRE NÓS */
+#sobre-nos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+  padding: 0 8%;
+}
 
-footer{
+#sobre-nos .texto{
+  margin-left: 8%;
+}
+
+#sobre-nos img {
+  width: 45%;
+  border-radius: 10px;
+}
+
+#sobre-nos h1{
+  font-size: 35px;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.671);
+}
+
+#sobre-nos h1 span{
+  color: #fab623;
+}
+
+/* FOOTER */
+footer {
   display: flex;
   background-color: #ffe8b4;
   justify-content: space-between;
-  padding: 0px 8% ;
+  padding: 0px 8%;
   align-items: center;
 }
 
-footer .logo-nome{
+footer .logo-nome {
   display: flex;
+  align-items: center;
 }
 
-footer .logo-nome img{
+footer .logo-nome img {
   margin-right: 20px;
 }
 
-footer .logo-nome{
-  align-items: center;
+/* RESPONSIVIDADE */
+@media (max-width: 1010px) {
+  header {
+    flex-direction: column;
+    padding: 10px 5%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #frente {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #frente .imagem {
+    width: 90%;
+    padding: 20px;
+    border-radius: 20%;
+  }
+
+  #promoções .pratos-especiais {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #sobre-mim {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
+@media (max-width: 768px) {
+  /* Tablets */
+  nav ul {
+    gap: 40px;
+  }
+  #frente img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smartphones */
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  #frente img {
+    width: 100%;
+  }
+}
+
